@@ -17,9 +17,11 @@ ADD /serf-join.sh /serf-join.sh
 ADD /run.sh /run.sh
 ADD /supervisord-mysqld.conf /etc/supervisor/conf.d/supervisord-mysqld.conf
 ADD /supervisord-serf.conf /etc/supervisor/conf.d/supervisord-serf.conf
+ADD /supervisord-restart.conf /etc/supervisor/conf.d/supervisord-restart.conf
 ADD /my.cnf /etc/mysql/conf.d/my.cnf
 ADD /create_mysql_admin_user.sh /create_mysql_admin_user.sh
 ADD /import_sql.sh /import_sql.sh
+ADD /restart-proc.sh /restart-proc.sh
 RUN chmod 755 /*.sh
 
 EXPOSE 3306
